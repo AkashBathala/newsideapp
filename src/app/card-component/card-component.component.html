@@ -2,9 +2,10 @@
   <ion-card-content class="nopadding">
     <ion-grid class="nopadding">
       <ion-row>
-        <ion-col class="nopadding" size="2">
-          <ion-icon style="height: 100%;width: 80%;" name="{{icon}}">
-          </ion-icon>
+        <ion-col class="nopadding" style="height: 100%;" size="2">
+          <div>
+            <img style="margin-top: 50%" src="assets/icon/home.png">
+          </div>
         </ion-col>
         <ion-col size="8" class="nopadding">
           <ion-title class="nopadding" style="color: black;">#{{id}}-{{name}}-{{project}}-{{date}}</ion-title>
@@ -13,7 +14,6 @@
           <ion-row class="currentColor">for-{{project}}</ion-row>
           <ion-row class="currentColor">{{name}}</ion-row>
           <ion-row class="currentColor">job Date-{{date|date : " MMMM d, y"}}</ion-row>
-
         </ion-col>
         <ion-col class="nopadding" size="2">
           <ion-icon name="ios-arrow-forward" style="height: 100%;width: 50%; align-items: center !important; ">

@@ -5,6 +5,5 @@ export class Data
     address:string;
     name:string;
     project:string;
-    icon:string;
     date:Date;
 }

@@ -20,16 +20,13 @@
       </ion-content>
     </ion-menu>
     <ion-router-outlet main></ion-router-outlet>
-  </ion-split-pane>
-  
+  </ion-split-pane>  
 </ion-app> -->
 
 
 <ion-content>
-
-
   <div *ngFor="let d of data" >
-    <app-card-component  name="{{d.name}}"   project="{{d.project}}" date="{{d.date}}" id="{{d.id}}" icon="{{d.icon}}"
+    <app-card-component  name="{{d.name}}" project="{{d.project}}" date="{{d.date}}" id="{{d.id}}"
       status="{{d.status}}" address="{{d.address}}"></app-card-component>
   </div>
 </ion-content>
