@@ -3,20 +3,22 @@
     <ion-grid>
       <ion-row>
         <ion-col size="2">
-          <ion-icon name="{{icon}}">
+          <ion-icon style="height: 100%;width: 80%;" name="{{icon}}">
           </ion-icon>
         </ion-col>
         <ion-col size="8">
-          <ion-title size="12" class="nopadding">{{name}}-{{type}}aaaaaaaa aaaaaaa aaaaaaaa</ion-title>
+          <ion-title  class="nopadding" style="color: black;">#{{id}}-{{name}}-{{project}}-{{date}}</ion-title>
+          <ion-row>status-{{status}}</ion-row>
+          <ion-row>{{address}}</ion-row>
+          <ion-row>for-{{project}}</ion-row>
           <ion-row>{{name}}</ion-row>
-          <ion-row>{{name}}</ion-row>
-          <ion-row>{{name}}</ion-row>
-          <ion-row>{{name}}</ion-row>
+          <ion-row>job Date-{{date}}</ion-row>
+
         </ion-col>
-        <ion-col size="2">
-           <div><ion-icon  name="ios-arrow-forward">
-            </ion-icon></div> 
-          </ion-col>
+        <ion-col  size="2"  > 
+           <ion-icon  name="ios-arrow-forward"   style="height: 100%;width: 50%; align-items: center !important; ">
+            </ion-icon>
+                    </ion-col>
         
       </ion-row>
     </ion-grid>

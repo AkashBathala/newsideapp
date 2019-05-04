@@ -7,10 +7,18 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CardComponentComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
 
-  ngOnInit() {}
+    
+   }
+
+  ngOnInit() {
+  }
   @Input() name:string;
-  @Input() type:string;
+  @Input() project:string;
   @Input() icon:string;
+  @Input() id:number;
+  @Input() status:true;
+  @Input() address:string;
+  @Input() date:Date;
 }

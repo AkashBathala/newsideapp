@@ -27,8 +27,15 @@
     
 <ion-content>
     
-    <app-card-component name="d.name" type="d.type" icon="home" ></app-card-component>  
-        <!-- <div *ngFor="let d of data" >
-            <app-card-component name="{{d.name}}" type="{{d.type}}" icon="{{d.icon}}" ></app-card-component>  
-        </div> -->
+    
+        <div *ngFor="let d of data" >
+            <app-card-component 
+            name="{{d.name}}" 
+            project="{{d.project}}"
+             date="{{d.status}}"
+              id="{{d.id}}"
+               icon="{{d.icon}}"
+               status="{{d.status}}"
+               address="{{d.address}}" ></app-card-component>  
+        </div>
 </ion-content>

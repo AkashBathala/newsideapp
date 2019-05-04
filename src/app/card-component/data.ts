@@ -1,6 +1,10 @@
 export class Data
 {
+    id:number;
+    status:boolean;
+    address:string;
     name:string;
-    type:string;
+    project:string;
     icon:string;
+    date:Date;
 }
