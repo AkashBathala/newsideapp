@@ -11,10 +11,10 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 })
 export class AppComponent {
   public data:Data[]=[
-    {id:1235,address:"DS MAx ,Bangaluru" ,date:new Date,status:true, name:"name1",project:"home",icon:"home"},
-    {id:6546,address:"GS MAx ,Bangaluru" ,date:new Date,status:true, name:"name2",project:"person",icon:"person"},
-    {id:2316,address:"Ts TAx ,Bangaluru" ,date:new Date,status:true, name:"name3",project:"map",icon:"map"},
-    {id:2345,address:"DS MAx ,Bangaluru" ,date:new Date,status:true, name:"name4",project:"people",icon:"people"}
+    {id:1235,address:"DS MAx ,Bangaluru" ,date:new Date(),status:true, name:"name1",project:"home",icon:"home"},
+    {id:6546,address:"GS MAx ,Bangaluru" ,date:new Date(),status:true, name:"name2",project:"person",icon:"person"},
+    {id:2316,address:"Ts TAx ,Bangaluru" ,date:new Date(),status:true, name:"name3",project:"map",icon:"map"},
+    {id:2345,address:"DS MAx ,Bangaluru" ,date:new Date(),status:true, name:"name4",project:"people",icon:"people"}
 ];
 
   public appPages = [
@@ -45,8 +45,8 @@ export class AppComponent {
       this.splashScreen.hide();
     });
     
+   console.log(new Date);
     
   }
-
   
 }

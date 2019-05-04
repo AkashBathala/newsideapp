@@ -1,25 +1,25 @@
-<ion-card class="curserover" >
+<ion-card class="curserover">
   <ion-card-content class="nopadding">
-    <ion-grid>
+    <ion-grid class="nopadding">
       <ion-row>
-        <ion-col size="2">
+        <ion-col class="nopadding" size="2">
           <ion-icon style="height: 100%;width: 80%;" name="{{icon}}">
           </ion-icon>
         </ion-col>
-        <ion-col size="8">
-          <ion-title  class="nopadding" style="color: black;">#{{id}}-{{name}}-{{project}}-{{date}}</ion-title>
-          <ion-row>status-{{status}}</ion-row>
-          <ion-row>{{address}}</ion-row>
-          <ion-row>for-{{project}}</ion-row>
-          <ion-row>{{name}}</ion-row>
-          <ion-row>job Date-{{date}}</ion-row>
+        <ion-col size="8" class="nopadding">
+          <ion-title class="nopadding" style="color: black;">#{{id}}-{{name}}-{{project}}-{{date}}</ion-title>
+          <ion-row class="currentColor">status-{{status}}</ion-row>
+          <ion-row class="currentColor">{{address}}</ion-row>
+          <ion-row class="currentColor">for-{{project}}</ion-row>
+          <ion-row class="currentColor">{{name}}</ion-row>
+          <ion-row class="currentColor">job Date-{{date|date : " MMMM d, y"}}</ion-row>
 
         </ion-col>
-        <ion-col  size="2"  > 
-           <ion-icon  name="ios-arrow-forward"   style="height: 100%;width: 50%; align-items: center !important; ">
-            </ion-icon>
-                    </ion-col>
-        
+        <ion-col class="nopadding" size="2">
+          <ion-icon name="ios-arrow-forward" style="height: 100%;width: 50%; align-items: center !important; ">
+          </ion-icon>
+        </ion-col>
+
       </ion-row>
     </ion-grid>
 
