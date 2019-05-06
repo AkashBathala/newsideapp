@@ -1,3 +1,4 @@
+import { Data } from './data';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
@@ -7,16 +8,13 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CardComponentComponent implements OnInit {
 
+  @Input() datapacket;
   constructor() { 
    }
 
   ngOnInit() {
+      
   }
-  @Input() name:string;
-  @Input() project:string;
-  @Input() icon:string;
-  @Input() id:number;
-  @Input() status:true;
-  @Input() address:string;
-  @Input() date:Date;
+  
+  
 }

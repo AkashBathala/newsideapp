@@ -25,8 +25,23 @@
 
 
 <ion-content>
-  <div *ngFor="let d of data" >
-    <app-card-component  name="{{d.name}}" project="{{d.project}}" date="{{d.date}}" id="{{d.id}}"
-      status="{{d.status}}" address="{{d.address}}"></app-card-component>
-  </div>
+
+    <!-- <ion-item>
+        <ion-avatar  slot="start">
+          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+        </ion-avatar>
+        <ion-grid>
+            <ion-row style="text-overflow: ellipsis;">sadasasdasdasd asd as das d asd </ion-row>            
+            <ion-row class="currentColor">{{addres</ion-row>
+            <ion-row class="currentColor">for-project}}</ion-row>
+            <ion-row class="currentColor">{{name}</ion-row>
+            <ion-row class="currentColor">job Date-{date|date : " MMMM d, y"}}</ion-row>
+            
+        </ion-grid>
+        <ion-note item-end style="align-self: center" >1:12 pm</ion-note>
+      </ion-item> -->
+
+    <div *ngFor="let d of data">
+      <app-card-component datapacket="{{d}}"></app-card-component>
+    </div>
 </ion-content>

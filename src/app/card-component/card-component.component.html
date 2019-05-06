@@ -1,27 +1,18 @@
-<ion-card class="curserover">
+<!-- <ion-card class="nopadding">
   <ion-card-content class="nopadding">
-    <ion-grid class="nopadding">
-      <ion-row>
-        <ion-col class="nopadding" style="height: 100%;" size="2">
-          <div>
-            <img style="margin-top: 50%" src="assets/icon/home.png">
-          </div>
-        </ion-col>
-        <ion-col size="8" class="nopadding">
-          <ion-title class="nopadding" style="color: black;">#{{id}}-{{name}}-{{project}}-{{date}}</ion-title>
-          <ion-row class="currentColor">status-{{status}}</ion-row>
-          <ion-row class="currentColor">{{address}}</ion-row>
-          <ion-row class="currentColor">for-{{project}}</ion-row>
-          <ion-row class="currentColor">{{name}}</ion-row>
-          <ion-row class="currentColor">job Date-{{date|date : " MMMM d, y"}}</ion-row>
-        </ion-col>
-        <ion-col class="nopadding" size="2">
-          <ion-icon name="ios-arrow-forward" style="height: 100%;width: 50%; align-items: center !important; ">
-          </ion-icon>
-        </ion-col>
-
-      </ion-row>
-    </ion-grid>
-
+      <ion-item>
+          <ion-avatar slot="start">
+            <img src="/assets/icon/{{project}}.png">
+          </ion-avatar>
+          <ion-grid style="width:100%; " >
+            <p class="cut-text " style="font-size: 16px;">#{{id}}-{{name}}-{{project}}-{{address}}</p>
+            <p class="currentColor">{{address}}</p>
+            <p class="currentColor">for-{{project}}</p>
+            <p class="currentColor">{{name}}</p>
+            <p class="currentColor">job Date-{{date|date : " MMMM d, y"}}</p>
+          </ion-grid>
+          <ion-note item-end style="align-self: center"><ion-icon name="ios-arrow-forward"></ion-icon></ion-note>
+        </ion-item>
   </ion-card-content>
-</ion-card>
+</ion-card> -->
+  {{datapacket.id}}
